@@ -1,4 +1,5 @@
 // typescript practice
+const log = console.log;
 
 let abc: string = "document";
 let num: number = 45;
@@ -14,3 +15,11 @@ let user: {
   age: 26,
   email: "moh.abuhanifa@gmail.com",
 };
+
+function getState() {
+  return "function";
+}
+
+log(user);
+
+export {};
