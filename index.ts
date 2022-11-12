@@ -19,6 +19,9 @@ let user: {
 function getState() {
   return "function";
 }
+function getState2(): void {
+  let string = "function";
+}
 
 log(user);
 
