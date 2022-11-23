@@ -10,3 +10,11 @@ function addThree(num: number): void {
 }
 
 addTwo(5);
+
+// let myFunc: Function;
+
+let myFunc = (a: string, b: number) => {
+  console.log(`Hello world! ${a} ${b}`);
+};
+
+myFunc("5", 5);
