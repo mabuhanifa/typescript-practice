@@ -28,7 +28,7 @@ let myFunc2 = (a: string, b: number, c?: string /* optional parameter*/) => {
 let myFunc3 = (
   a: string,
   b: number,
-  c: string = " hi" /* default  parameter value*/
+  c: string = " hi" /*  default value   */
 ) => {
   console.log(`Hello world! ${a} ${b}`);
 };
