@@ -41,7 +41,7 @@ mixed3.push(15); //okay
 mixed3.push(true); //okay
 mixed3.push({}); //okay
 
-//**   ----------------------Array-------------------------  */
+//**   ----------------------Object-------------------------  */
 
 let person = {
   name: "Shourov",
