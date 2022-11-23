@@ -30,8 +30,15 @@ let myFunc3 = (
   b: number,
   c: string = " hi" /*  default value   */
 ) => {
-  console.log(`Hello world! ${a} ${b}`);
+  console.log(`Hello world! ${a} ${b} ${c}`);
 };
 
-myFunc("5", 5);
-myFunc2("5", 5);
+myFunc2("a", 5); //Hello world a 5
+myFunc3("a", 5); //Hello world a 5 hi
+
+const myFunc4 = (a: number, b: number, c: string = "true"): string => {
+  // return a + b; -> error as it will return a number
+  return `a + b`;
+};
+
+myFunc4(5, 5); // a + b
