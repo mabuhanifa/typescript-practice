@@ -20,8 +20,19 @@ let c: object;
 
 c = { ab: "abc", bc: 9, cd: true }; //okay
 
+c = [1, "abc", true]; // ok -> array is a type of object
+
 let d: {
   name: string;
   age: number;
   adult: boolean;
 };
+
+d = {
+  name: " abc",
+  age: 25,
+  adult: true,
+  //   isAdmin: false, // -> error
+};
+
+// d= [] // -> error -> is missing the following properties from type '{ name: string; age: number; adult: boolean; }'
