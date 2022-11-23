@@ -26,3 +26,5 @@ let user5 = addId({
   age: 36 /**   @age should always be there **/,
   country: "Bangladesh", // adding extra variable will be added later by generics
 });
+
+export {};
