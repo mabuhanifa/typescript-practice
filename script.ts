@@ -41,4 +41,21 @@ mixed3.push(15); //okay
 mixed3.push(true); //okay
 mixed3.push({}); //okay
 
+//**   ----------------------Array-------------------------  */
+
+let person = {
+  name: "Shourov",
+  age: 25,
+  isHired: false,
+};
+
+person.name = "Abu Hanifa"; // ok
+person.age = 26; // ok
+person.isHired = true; // ok
+
+// person.country = "Bangladesh"; // error
+// person.name = 25; // error
+// person.age ="26"; // error
+// person.isHired = null; // error
+
 export {};
