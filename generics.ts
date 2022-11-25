@@ -29,13 +29,13 @@ let user5 = addId({
 
 //* ------------------------API Response--------------------------*//
 
-interface APIResponse {
+interface APIResponse<T> {
   status: number;
   type: string;
-  data: object;
+  data: T;
 }
 
-const responseSample: APIResponse = {
+const responseSample: APIResponse<object> = {
   status: 200,
   type: "application",
   data: {
