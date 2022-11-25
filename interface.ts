@@ -11,5 +11,6 @@ function drawRectangle(options: RectangleOptions) {
 drawRectangle({
   height: 5,
   width: 5,
+  //   length: 10, ->error  'length' does not exist in type 'RectangleOptions'
 });
 export {};
