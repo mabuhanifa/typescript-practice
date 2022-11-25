@@ -23,3 +23,5 @@ const players: Player[] = []; // Class Player is used as a type
 players.push(sakib); //okay
 players.push(mashrafi); //okay
 // players.push("sakib"); //error
+
+export {};
