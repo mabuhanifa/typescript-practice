@@ -16,7 +16,7 @@ let newOptions = {
 drawRectangle({
   height: 5,
   width: 5,
-  //   length: 10, ->error  'length' does not exist in type 'RectangleOptions'
+  //   length: 10, ->error if invoked directly -> 'length' does not exist in type 'RectangleOptions'
 });
 
 drawRectangle(newOptions); // -> ok -> passed by reference
