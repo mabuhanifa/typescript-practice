@@ -27,4 +27,21 @@ let user5 = addId({
   country: "Bangladesh", // adding extra variable will be added later by generics
 });
 
+//* ------------------------API Response--------------------------*//
+
+interface APIResponse {
+  status: number;
+  type: string;
+  data: object;
+}
+
+const responseSample: APIResponse = {
+  status: 200,
+  type: "application",
+  data: {
+    name: "Test",
+    data: 300,
+  },
+};
+
 export {};
