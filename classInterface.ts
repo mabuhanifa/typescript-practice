@@ -20,7 +20,7 @@ class Player implements isPlayer {
 
 let sakib: isPlayer;
 
-const players: Player[] = [
+const players: isPlayer[] = [
   /*only data created using interface isPlayer can be pushed into this array*/
 ];
 
@@ -29,4 +29,4 @@ let newPlayer = "Nizam";
 sakib = new Player("Sakib", 25, "Bangladesh");
 
 players.push(sakib);
-// players.push(newPlayer); -> error -> argument of type 'string' is not assignable to parameter of type 'Player'.
+// players.push(newPlayer); -> error -> argument of type 'string' is not assignable to parameter of type 'isPlayer'.
