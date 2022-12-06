@@ -1,0 +1,1 @@
+type arr = Array<string>;
