@@ -66,4 +66,12 @@ interface Wrapper<T> {
   data: T;
 }
 
+interface User {
+  name: string;
+  id: string;
+  age: number;
+}
+
+type UserWrapper = Wrapper<User>;
+
 export {};
