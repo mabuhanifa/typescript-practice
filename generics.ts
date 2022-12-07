@@ -53,13 +53,13 @@ dataWrapper({ t: "T" });
 dataWrapper([{ t: "T" }]);
 
 type Array = {
-  data: string;
+  data: string[];
 };
 
 const dataWrapperArray = <T extends Array>(thing: T) => {
   return { data: thing };
 };
 
-dataWrapperArray({ data: "Array" });
+dataWrapperArray({ data: ["Array"] });
 
 export {};
