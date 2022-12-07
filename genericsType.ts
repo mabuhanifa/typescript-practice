@@ -17,6 +17,6 @@ const f2 = first<number>([1, 2, 3]);
 const fs = first(["1", "2", "3"]);
 // const l = last([1,"2",3]) -> Type 'number' is not assignable to type 'string'.
 
-const twoFn = <X, Y>(x: X, y: Y): (X | Y)[] => {
+const twoFn = <X, Y>(x: X, y: Y): [X, Y] => {
   return [x, y];
 };
