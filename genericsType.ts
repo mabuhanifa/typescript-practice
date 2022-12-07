@@ -34,7 +34,14 @@ type NumberTab = Tab<number> === type NumberTab={
   position: number;
   data: number;
 }
-
 */
 
 type StringTab = Tab<string>;
+
+/*
+type StringTab = Tab<number> === type NumberTab={
+ id: string;
+  position: number;
+  data: string;
+}
+*/
