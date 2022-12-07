@@ -62,4 +62,8 @@ const dataWrapperArray = <T extends Array>(thing: T) => {
 
 dataWrapperArray({ data: ["Array"] });
 
+interface Wrapper<T> {
+  data: T;
+}
+
 export {};
