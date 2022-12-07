@@ -50,5 +50,16 @@ const dataWrapper = <T extends object>(thing: T) => {
 
 // dataWrapper("T"); Argument of type 'string' is not assignable to parameter of type 'object'.
 dataWrapper({ t: "T" });
+dataWrapper([{ t: "T" }]);
+
+type Array = {
+  data: string;
+};
+
+const dataWrapperArray = <T extends Array>(thing: T) => {
+  return { data: thing };
+};
+
+dataWrapperArray({ data: "Array" });
 
 export {};
