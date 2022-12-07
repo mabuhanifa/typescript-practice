@@ -74,4 +74,12 @@ interface User {
 
 type UserWrapper = Wrapper<User>;
 
+const finalUser: UserWrapper = {
+  data: {
+    name: "",
+    age: 24,
+    id: "",
+  },
+};
+
 export {};
