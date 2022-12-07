@@ -20,3 +20,21 @@ const fs = first(["1", "2", "3"]);
 const twoFn = <X, Y>(x: X, y: Y): [X, Y] /*  [X, Y] / (X|Y)[] */ => {
   return [x, y];
 };
+
+interface Tab<T> {
+  id: string;
+  position: number;
+  data: T;
+}
+
+type NumberTab = Tab<number>;
+/*
+type NumberTab = Tab<number> === type NumberTab={
+ id: string;
+  position: number;
+  data: number;
+}
+
+*/
+
+type StringTab = Tab<string>;
