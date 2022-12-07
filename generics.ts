@@ -68,7 +68,7 @@ interface Wrapper<T> {
 
 interface User {
   name: string;
-  id: string;
+  id: number;
   age: number;
 }
 
@@ -76,9 +76,9 @@ type UserWrapper = Wrapper<User>;
 
 const finalUser: UserWrapper = {
   data: {
-    name: "",
+    name: " ",
     age: 24,
-    id: "",
+    id: 245,
   },
 };
 
