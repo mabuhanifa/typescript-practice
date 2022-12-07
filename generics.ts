@@ -44,4 +44,8 @@ const responseSample: APIResponse<object> = {
   },
 };
 
+const dataWrapper = <T extends {}>(thing: T) => {
+  return { data: thing };
+};
+
 export {};
