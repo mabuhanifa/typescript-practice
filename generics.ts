@@ -44,8 +44,11 @@ const responseSample: APIResponse<object> = {
   },
 };
 
-const dataWrapper = <T extends {}>(thing: T) => {
+const dataWrapper = <T extends object>(thing: T) => {
   return { data: thing };
 };
+
+// dataWrapper("T"); Argument of type 'string' is not assignable to parameter of type 'object'.
+dataWrapper({ t: "T" });
 
 export {};
