@@ -6,3 +6,9 @@ const promise = new Promise<string>((resolve, reject) => {
     resolve("this is done");
   }, 200);
 });
+
+promise.then((data) => {
+  data.split(
+    ","
+  ); /* All string methods will be available as the promise was type of string  */
+});
