@@ -1,5 +1,6 @@
-function merge(a: object, b: object) {
-  return Object.assign(a, b);
+function merge<T extends {}, U>(objA: T, objB: U) {
+  return Object.assign(objA, objB);
 }
 
-merge({ b: "a" }, { a: 3 });
+const newObj = merge({ name: "a" }, { age: 30 });
+newObj.age;
