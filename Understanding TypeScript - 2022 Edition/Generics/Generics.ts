@@ -8,7 +8,6 @@ const promise = new Promise<string>((resolve, reject) => {
 });
 
 promise.then((data) => {
-  data.split(
-    ","
-  ); /* All string methods will be available as the promise was type of string  */
+  data.split(",");
+  /* All string methods will be available as the promise was type of string .Others methods will not be available */
 });
