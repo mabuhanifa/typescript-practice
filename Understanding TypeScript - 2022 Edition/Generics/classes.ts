@@ -4,6 +4,9 @@ class DataStorage<T> {
     this.items.push(item);
   }
   removeItems(item: T) {
+    if (this.items.indexOf(item) === -1) {
+      return;
+    }
     this.items.splice(this.items.indexOf(item), 1);
   }
   getItems() {
