@@ -10,7 +10,7 @@ function completeCourse(
   completeUntil: Date
 ): CourseGoal {
   let courseGoal: Partial<CourseGoal> = {};
-  // Partial will makes CourseGoal properties optional
+  // Partial will makes courseGoal properties optional
   (courseGoal.titles = titles),
     (courseGoal.description = description),
     (courseGoal.completeUntil = completeUntil);
