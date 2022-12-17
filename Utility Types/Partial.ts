@@ -7,7 +7,7 @@ interface Todo {
 type TodoOptional = Partial<Todo>;
 
 const todo: TodoOptional = {
-  description: "Optional",
-  id: "optional",
-  title: "Optional",
+  //   description: "Optional",
+  //   id: "optional",
+  //   title: "Optional",
 };
