@@ -6,7 +6,9 @@ interface CourseGoal {
 
 function completeCourse(
   titles: string,
+
   description: string,
+
   completeUntil: Date
 ): CourseGoal {
   let courseGoal: Partial<CourseGoal> = {};
